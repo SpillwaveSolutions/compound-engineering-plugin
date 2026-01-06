@@ -299,10 +299,38 @@ Guide through decision points:
 
 ## Reference Files
 
-For detailed guidance, see:
+### Core Documentation
 
-- [official-spec.md](references/official-spec.md) - Anthropic's official skill specification
-- [best-practices.md](references/best-practices.md) - Skill authoring best practices
+| File | Purpose |
+|------|---------|
+| [official-spec.md](references/official-spec.md) | Anthropic's official skill specification |
+| [best-practices.md](references/best-practices.md) | Skill authoring best practices |
+| [core-principles.md](references/core-principles.md) | Foundational skill design principles |
+
+### Skill Structure
+
+| File | Purpose |
+|------|---------|
+| [skill-structure.md](references/skill-structure.md) | YAML frontmatter and markdown body format |
+| [recommended-structure.md](references/recommended-structure.md) | Directory layout and file organization |
+| [common-patterns.md](references/common-patterns.md) | Template, workflow, and conditional patterns |
+
+### Writing & Content
+
+| File | Purpose |
+|------|---------|
+| [be-clear-and-direct.md](references/be-clear-and-direct.md) | Writing style for effective skills |
+| [using-templates.md](references/using-templates.md) | Output templates and consistency |
+| [workflows-and-validation.md](references/workflows-and-validation.md) | Multi-step workflows and checklists |
+
+### Technical Implementation
+
+| File | Purpose |
+|------|---------|
+| [using-scripts.md](references/using-scripts.md) | Bundled script patterns and error handling |
+| [executable-code.md](references/executable-code.md) | Code examples and execution |
+| [api-security.md](references/api-security.md) | Security considerations for skills |
+| [iteration-and-testing.md](references/iteration-and-testing.md) | Testing and refinement practices |
 
 ## Success Criteria
 

@@ -6,6 +6,10 @@ allowed-tools:
   - Write
   - Edit
   - Read
+metadata:
+  version: "1.1.0"
+  category: design
+  tags: [frontend, ui, design, css, react, vue]
 ---
 
 # Frontend Design
@@ -14,11 +18,48 @@ Create distinctive, production-grade frontend interfaces that avoid generic AI a
 
 ## Contents
 
+- [Quick Start](#quick-start)
 - [Workflow](#workflow)
 - [Aesthetic Directions](#aesthetic-directions)
-- [Design Elements](#design-elements)
 - [Anti-Patterns](#anti-patterns)
-- [Quality Checklist](#quality-checklist)
+- [References](#references)
+
+## Quick Start
+
+**Example: Brutally Minimal Landing Page**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --text: #1a1a1a;
+      --muted: #888;
+    }
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 8rem 12rem;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      animation: fadeIn 1s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+</head>
+<body>
+  <h1>Less is more</h1>
+  <p>The power of restraint creates space for what matters.</p>
+</body>
+</html>
+```
 
 ## Workflow
 
@@ -26,11 +67,9 @@ Create distinctive, production-grade frontend interfaces that avoid generic AI a
 
 1. Identify purpose and audience
 2. Note technical constraints (framework, performance, accessibility)
-3. Choose ONE bold aesthetic direction from the list below
+3. Choose ONE bold aesthetic direction from the table below
 
 ### Phase 2: Design Commitment
-
-Choose a clear conceptual direction:
 
 | Direction | Character | Best For |
 |-----------|-----------|----------|
@@ -40,6 +79,8 @@ Choose a clear conceptual direction:
 | Editorial/magazine | Typography-forward, grid-based | Publications, blogs |
 | Brutalist/raw | Honest, structural, bold | Art, architecture |
 | Soft/pastel | Gentle, approachable, warm | Wellness, children |
+
+For detailed typography, color palettes, and layout patterns for each direction, see [aesthetic-guides.md](./references/aesthetic-guides.md).
 
 ### Phase 3: Implementation
 
@@ -70,11 +111,6 @@ Choose a clear conceptual direction:
 - Diagonal flow, grid-breaking elements
 - Generous negative space OR controlled density
 
-### Visual Details
-- Gradient meshes, noise textures, geometric patterns
-- Layered transparencies, dramatic shadows
-- Custom cursors, grain overlays
-
 ## Anti-Patterns
 
 **NEVER use these generic AI aesthetics:**
@@ -97,3 +133,11 @@ Before delivering:
 - [ ] Layout has intentional spatial composition
 - [ ] Production-grade and functional
 - [ ] Matches implementation complexity to vision
+
+## References
+
+| File | Purpose |
+|------|---------|
+| [aesthetic-guides.md](./references/aesthetic-guides.md) | Detailed typography, colors, layouts for each direction |
+| [brutally-minimal.html](./assets/brutally-minimal.html) | Complete example: minimal landing page |
+| [retro-futuristic.html](./assets/retro-futuristic.html) | Complete example: synthwave hero section |
