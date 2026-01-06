@@ -1,6 +1,6 @@
 ---
 name: create-agent-skills
-description: This skill should be used when creating, writing, or refining Claude Code Skills. Use when working with SKILL.md files, authoring new skills, improving existing skills, or understanding skill structure and best practices.
+description: This skill should be used when creating, writing, or refining Claude Code Skills. Triggers on "create skill", "write skill", "SKILL.md", "skill best practices", "author skill", "improve skill", or requests to work with Claude skill files, authoring, or understanding skill structure.
 license: MIT
 allowed-tools:
   - Read
@@ -313,6 +313,18 @@ A well-structured skill:
 - Links to reference files for detailed content
 - Includes concrete examples with input/output pairs
 - Has been tested with real usage
+
+## Quality Checklist
+
+Before publishing a skill:
+
+- [ ] Valid YAML frontmatter (name + description)
+- [ ] Description includes trigger keywords
+- [ ] Uses standard markdown headings (not XML tags)
+- [ ] SKILL.md under 500 lines
+- [ ] References one level deep
+- [ ] Examples are concrete, not abstract
+- [ ] Tested with real usage
 
 Sources:
 - [Agent Skills - Claude Code Docs](https://code.claude.com/docs/en/skills)
